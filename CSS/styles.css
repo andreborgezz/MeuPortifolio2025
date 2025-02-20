@@ -1,0 +1,109 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c333e; /* Escuro por padrão */
+    color: #ccd6f6; /* Texto claro por padrão */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s; /* Suaviza a troca de tema */
+}
+
+/* Parágrafos */
+.Sobre {
+    font-size:90px;
+    line-height: 1px;
+}
+
+/* Modo claro */
+.light-mode {
+    background-color: rgb(129, 143, 202); /* Fundo claro */
+    color: #000; /* Texto escuro */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333942; /* Escuro por padrão */
+    transition: background-color 0.3s;
+}
+
+/* Navbar no modo claro */
+.light-mode .navbar {
+    background-color: #dbeafe;
+}
+
+/* Links do menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #8a99c8; /* Links claros para o modo escuro */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #8892b0;
+}
+
+/* Links do menu no modo claro */
+.light-mode .nav-links a {
+    color: #0366d6;
+}
+
+.light-mode .nav-links a:hover {
+    color: #033c71;
+}
+
+/* Botão de alternância de tema */
+#modo-noturno {
+    background: none;
+    border: 2px solid #8a99c8;
+    color: #8a99c8;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#modo-noturno:hover {
+    background-color: #8a99c8;
+    color: #0a192f;
+}
+
+/* Botão no modo claro */
+.light-mode #modo-noturno {
+    border-color: #0366d6;
+    color: #0366d6;
+}
+
+.light-mode #modo-noturno:hover {
+    background-color: #0366d6;
+    color: #fff;
+}
+
+/* Seções */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    color: #8a99c8;
+    transition: color 0.3s;
+}
+
+/* Títulos no modo claro */
+.light-mode h1 {
+    color: #033c71;
+}
+
